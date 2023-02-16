@@ -1,1 +1,8 @@
 <h1>Here's your answer</h1>
+
+<% if @question %>
+  <p>You asked: <%= @question %></p>
+  <p>Your stupid coach answered: <%= @answer %></p>
+<% end %>
+
+<%= link_to "Ask another question", ask_path, style:"text-decoration: none; color:black;"  %>
